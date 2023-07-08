@@ -3,6 +3,7 @@ package com.example.demo3.Rest;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -50,5 +51,10 @@ public void delete(Integer Id){
 Employee save(Employee emps){
 Employee es1 = emp1.save(emps);
 return es1;
+}
+@GetMapping("/emp/{empid}")
+public Employee getEmployee(@PathVariable int empid){
+    Employee emp2 = emp1.findbyid(empid);
+    return emp2 ;
 }
 }
