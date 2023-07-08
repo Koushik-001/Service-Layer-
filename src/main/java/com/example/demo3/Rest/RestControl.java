@@ -13,22 +13,7 @@ import com.example.demo3.Service.Serviceint;
 @RestController
 @RequestMapping("/Employee")
 public class RestControl {
-    /*private Serviceimpl emp1;
-        public RestControl(Serviceimpl empl){
-        emp1 = empl;
-    }
-@GetMapping("/all")
-public List<Employee> findall(){
-    return emp1.findall();
-}
-@GetMapping("/id")
-Employee findbyId(int id){
-    return emp1.findbyid(4);
-}
-@GetMapping("/delete")
-public void delete(int id){
-    emp1.delete(2);
-}*/
+   
 private Serviceint emp1;
 public RestControl(Serviceint empd1){
 emp1=empd1;
